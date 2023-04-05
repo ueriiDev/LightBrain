@@ -1,0 +1,84 @@
+{
+    "questions": [{
+            "question": "Qual è il valore di x nella seguente equazione? 3x - 5 = 7",
+            "options": ["2", "3", "4", "5"],
+            "correct": 0
+        }, {
+            "question": "Qual è il risultato di (4 + 5i) + (3 - 2i)?",
+            "options": ["7 - i", "7 + 3i", "7 + 5i", "7 + 7i"],
+            "correct": 3
+        }, {
+            "question": "Qual è il risultato di (2x + 5)(3x - 7)?",
+            "options": ["6x^2 - 29x - 35", "6x^2 + 29x - 35", "6x^2 - 29x + 35", "6x^2 + 29x + 35"],
+            "correct": 0
+        }, {
+            "question": "Quanto vale il logaritmo in base 2 di 8?",
+            "options": ["1", "2", "3", "4"],
+            "correct": 2
+        }, {
+            "question": "Qual è il valore di x nella seguente equazione? 2^(x+1) = 16",
+            "options": ["2", "3", "4", "5"],
+            "correct": 1
+        }, {
+            "question": "Quale delle seguenti espressioni è equivalente a 3^(2x)?",
+            "options": ["9^(x)", "6^(x)", "3^(x^2)", "9^(x)"],
+            "correct": 0
+        }, {
+            "question": "Quanto vale il seno di 90 gradi?",
+            "options": ["0", "1", "-1", "2"],
+            "correct": 1
+        }, {
+            "question": "Quanto vale il coseno di 180 gradi?",
+            "options": ["0", "1", "-1", "2"],
+            "correct": 2
+        }, {
+            "question": "Qual è l'area di un triangolo con base 4 e altezza 6?",
+            "options": ["10", "12", "14", "16"],
+            "correct": 1
+        }, {
+            "question": "Quale delle seguenti equazioni rappresenta una retta parallela a y = 3x + 5?",
+            "options": ["y = 3x - 2", "y = -3x + 1", "y = -1/3x + 4", "y = 1/3x + 7"],
+            "correct": 0
+        }, {
+            "question": "Quanto vale il perimetro di un rettangolo con base 6 e altezza 4?",
+            "options": ["16", "20", "24", "28"],
+            "correct": 1
+        }, {
+            "question": "Qual è il valore di x nella seguente equazione? 3x + 2 = 2x - 7",
+            "options": ["-1", "-9", "9", "1"],
+            "correct": 1
+        }, {
+            "question": "Quanto è 4 elevato alla terza potenza?",
+            "options": ["48", "64", "128", "256"],
+            "correct": 1
+        }, {
+            "question": "Qual è il minimo comune multiplo tra 4 e 6?",
+            "options": ["8", "12", "18", "24"],
+            "correct": 1
+        }, {
+            "question": "Quale delle seguenti frazioni è equivalente a 3/4?",
+            "options": ["6/8", "9/12", "12/16", "15/20"],
+            "correct": 0
+        }, {
+            "question": "Qual è il risultato di 5! (5 fattoriale)?",
+            "options": ["20", "60", "120", "240"],
+            "correct": 2
+        }, {
+            "question": "Se A è inversamente proporzionale a B e A = 6 quando B = 2, quale sarà il valore di A quando B = 3?",
+            "options": ["4", "6", "9", "12"],
+            "correct": 0
+        }, {
+            "question": "Qual è l'inverso moltiplicativo di 7?",
+            "options": ["1/7", "7", "-7", "1"],
+            "correct": 0
+        }, {
+            "question": "Qual è l'equazione della circonferenza con centro (2, 3) e raggio 5?",
+            "options": ["(x-2)^2 + (y-3)^2 = 5", "(x-2)^2 + (y-3)^2 = 10", "(x-2)^2 + (y-3)^2 = 25", "(x+2)^2 + (y+3)^2 = 25"],
+            "correct": 2
+        }, {
+            "question": "Qual è il valore di x nella seguente equazione? 5x + 3 = 3x + 9",
+            "options": ["2", "3", "4", "5"],
+            "correct": 1
+        }
+    ]
+}
