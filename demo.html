@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo Quiz Application</title>
+    <!-- Include jQuery and Bootstrap libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .question-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+	
+	<!-- Start header -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="logo.png" alt="Logo" style="width:50px;height:50px;">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+	
+    <div class="container">
+        <h1 class="text-center">Demo Quiz Application</h1>
+        
+        <div id="quiz-container">
+            <div class="text-center">
+                <button id="start-button" class="btn btn-primary">Start test</button>
+            </div>
+        </div>
+
+        <div id="result-container" class="text-center" style="display: none;">
+            <h2>Correct Answers: <span id="correct-answers"></span> / <span id="total-questions"></span></h2>
+        </div>
+    </div>
+	
+	 <!-- Start footer -->
+    <footer>
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container-fluid">
+                <p class="navbar-text navbar-left">&copy; 2023 - All rights reserved.</p>
+                <p class="navbar-text navbar-right" id="timer"></p>
+            </div>
+        </nav>
+    </footer>
+    <!-- End footer -->
+
+    <script>
+        $(document).ready(function() {
+  let questions = [];
+  let currentQuestionIndex = 0;
+  let numCorrectAnswers = 0;
+  let timeLimit = 60; // time limit in seconds for the quiz
+  let timeLeft = timeLimit; // initial remaining time
+
+  // Load questions from JSON file
+  $.getJSON("quizData.json", function(data) {
+    questions = data.questions;
+    $("#total-questions").text(questions.length);
+  });
+
+  // Show the first question on "Start Quiz" button click
+  $("#start-button").click(function() {
+    $("#quiz-container").empty();
+    $("#result-container").hide();
+    showNextQuestion();
+    startTimer();
+  });
+
+  // Function to show the next question
+  function showNextQuestion() {
+    if (currentQuestionIndex >= questions.length) {
+      showFinalScore();
+      return;
+    }
+
+    const question = questions[currentQuestionIndex];
+    currentQuestionIndex++;
+
+    const questionElement = `
+      <div class="question-container">
+        <h2>${question.question}</h2>
+        <div class="row">
+          ${question.options.map((option, index) => `
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-default btn-block answer-button" data-index="${index}">
+                ${option}
+              </button>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `;
+    $("#quiz-container").html(questionElement);
+    $(".question-container").fadeIn();
+  }
+
+  // Function to show the final score
+  function showFinalScore() {
+    $("#quiz-container").empty();
+    $("#result-container").show();
+    $("#correct-answers").text(numCorrectAnswers);
+    stopTimer();
+  }
+
+  // Handle answer selection
+  $("#quiz-container").on("click", ".answer-button", function() {
+    const selectedAnswerIndex = parseInt($(this).data("index"));
+
+    if (selectedAnswerIndex === questions[currentQuestionIndex - 1].correct) {
+      numCorrectAnswers++;
+    }
+
+    $(".question-container").fadeOut("fast", function() {
+      if (currentQuestionIndex >= questions.length) {
+        showFinalScore();
+      } else {
+        showNextQuestion();
+      }
+    });
+  });
+
+  // Function to start the timer
+  function startTimer() {
+    let timerInterval = setInterval(function() {
+      timeLeft--;
+      let minutes = Math.floor(timeLeft / 60);
+      let seconds = timeLeft % 60;
+      $("#timer").text("Time left: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds);
+
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        showFinalScore();
+      }
+    }, 1000);
+  }
+
+  // Function to stop the timer
+  function stopTimer() {
+    $("#timer").text("");
+  }
+});
+
+    </script>
+</body>
+</html>
