@@ -1,0 +1,84 @@
+{
+    "questions": [{
+            "question": "Was ist der Wert von x in der folgenden Gleichung? 3x - 5 = 7",
+            "options": ["2", "3", "4", "5"],
+            "correct": 0
+        }, {
+            "question": "Was ist das Ergebnis von (4 + 5i) + (3 - 2i)?",
+            "options": ["7 - i", "7 + 3i", "7 + 5i", "7 + 7i"],
+            "correct": 3
+        }, {
+            "question": "Was ist das Ergebnis von (2x + 5)(3x - 7)?",
+            "options": ["6x^2 - 29x - 35", "6x^2 + 29x - 35", "6x^2 - 29x + 35", "6x^2 + 29x + 35"],
+            "correct": 0
+        }, {
+            "question": "Wie lautet der Logarithmus zur Basis 2 von 8?",
+            "options": ["1", "2", "3", "4"],
+            "correct": 2
+        }, {
+            "question": "Was ist der Wert von x in der folgenden Gleichung? 2^(x+1) = 16",
+            "options": ["2", "3", "4", "5"],
+            "correct": 1
+        }, {
+            "question": "Welcher der folgenden Ausdr\u00c3\u00bccke ist \u00c3\u00a4quivalent zu 3^(2x)?",
+            "options": ["9^(x)", "6^(x)", "3^(x^2)", "9^(x)"],
+            "correct": 0
+        }, {
+            "question": "Was ist der Sinus von 90 Grad?",
+            "options": ["0", "1", "-1", "2"],
+            "correct": 1
+        }, {
+            "question": "Was ist der Kosinus von 180 Grad?",
+            "options": ["0", "1", "-1", "2"],
+            "correct": 2
+        }, {
+            "question": "Wie gro\u00c3\u0178 ist die Fl\u00c3\u00a4che eines Dreiecks mit einer Basis von 4 und einer H\u00c3\u00b6he von 6?",
+            "options": ["10", "12", "14", "16"],
+            "correct": 1
+        }, {
+            "question": "Welche der folgenden Gleichungen stellt eine Linie dar, die parallel zu y = 3x + 5 verl\u00c3\u00a4uft?",
+            "options": ["y = 3x - 2", "y = -3x + 1", "y = -1/3x + 4", "y = 1/3x + 7"],
+            "correct": 0
+        }, {
+            "question": "Wie lang ist der Umfang eines Rechtecks mit einer Basis von 6 und einer H\u00c3\u00b6he von 4?",
+            "options": ["16", "20", "24", "28"],
+            "correct": 1
+        }, {
+            "question": "Was ist der Wert von x in der folgenden Gleichung? 3x + 2 = 2x - 7",
+            "options": ["-1", "-9", "9", "1"],
+            "correct": 1
+        }, {
+            "question": "Wie lautet 4 hoch 3?",
+            "options": ["48", "64", "128", "256"],
+            "correct": 1
+        }, {
+            "question": "Was ist das kleinste gemeinsame Vielfache von 4 und 6?",
+            "options": ["8", "12", "18", "24"],
+            "correct": 1
+        }, {
+            "question": "Welcher der folgenden Br\u00c3\u00bcche ist \u00c3\u00a4quivalent zu 3/4?",
+            "options": ["6/8", "9/12", "12/16", "15/20"],
+            "correct": 0
+        }, {
+            "question": "Was ist das Ergebnis von 5! (5 Fakult\u00c3\u00a4t)?",
+            "options": ["20", "60", "120", "240"],
+            "correct": 2
+        }, {
+            "question": "Wenn A umgekehrt proportional zu B ist und A = 6, wenn B = 2, welcher Wert hat A, wenn B = 3?",
+            "options": ["4", "6", "9", "12"],
+            "correct": 0
+        }, {
+            "question": "Was ist das multiplikative Inverse von 7?",
+            "options": ["1/7", "7", "-7", "1"],
+            "correct": 0
+        }, {
+            "question": "Wie lautet die Gleichung des Kreises mit Zentrum (2, 3) und Radius 5?",
+            "options": ["(x-2)^2 + (y-3)^2 = 5", "(x-2)^2 + (y-3)^2 = 10", "(x-2)^2 + (y-3)^2 = 25", "(x+2)^2 + (y+3)^2 = 25"],
+            "correct": 2
+        }, {
+            "question": "Was ist der Wert von x in der folgenden Gleichung? 5x + 3 = 3x + 9",
+            "options": ["2", "3", "4", "5"],
+            "correct": 1
+        }
+    ]
+}
